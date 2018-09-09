@@ -23,3 +23,11 @@ In this version of sentiment analysis we perform preprocessing on the tweets by 
    * Sklearn
    * WordNet Lemmatizer
    * NLTK
+ 
+## V4
+We have used the IMDB Large Review dataset(preloaded in keras and converted to integer tokens) to perform sentiment analysis.We have 1 LSTM layer and 1 Dense layer(with sigmoid activation) to perform sentiment analysis.This is different from the earlier versions because the average length of reviews in this dataset is 470 words which is much larger than those used in earlier cases.LSTM helps in this case as it remember words from earlier better(to understand about LSTM read chris olah's post about the same). After training we have been able to achieve 83% accuracy after using a single LSTM unit and the first 500 words from vocabulary.
+
+   ## Dependencies:
+   * Tensorflow
+   * Keras
+   * Numpy
